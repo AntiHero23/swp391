@@ -1,0 +1,68 @@
+.manager-koi{
+background-image: url('../../../assets/LoginBg.png');
+background-size: cover;
+background-attachment: fixed;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+.ManagerKoi-container {
+  border-radius: 25px;
+  padding: 40px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  max-width: 1000px;
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9); //Semi-transparent bg
+
+  h1 {
+    text-align: center; // Center the title
+    font-family: 'Oswald', sans-serif; // Font style for the title
+    color: #1890ff; // Title color
+    margin-bottom: 20px; // Margin below the title
+  }
+
+  .filter-search {
+    display: flex; // Flexbox for filter section
+    justify-content: center; // Center items horizontally
+    align-items: center; // Center items vertically
+    margin-bottom: 20px; // Space below filter section
+
+    .search-input {
+      padding: 10px; // Padding for input
+      border: 1px solid #d9d9d9; // Light border for input
+      border-radius: 4px; // Rounded corners for input
+      margin-right: 10px; // Space between input and select
+      width: 200px; // Fixed width for input
+    }
+
+    .filter-select {
+      padding: 10px; // Padding for select dropdown
+      border: 1px solid #d9d9d9; // Light border for select
+      border-radius: 4px; // Rounded corners for select
+      margin-right: 10px; // Space between select and icon
+    }
+
+    .anticon {
+      cursor: pointer; // Pointer cursor on icon hover
+      color: #1890ff; // Icon color
+      font-size: 24px; // Icon size
+      transition: color 0.3s; // Smooth transition for color change
+
+      &:hover {
+        color: #40a9ff; // Change color on hover
+      }
+    }
+  }
+
+  .koi-fish-dashboard {
+    display: grid; // Use grid for layout
+    grid-template-columns: repeat(2, 1fr); // Responsive columns
+    gap: 20px; // Space between cards
+    justify-items: center; // Center cards horizontally
+    align-items: start; // Align cards to the start vertically
+  }
+}
+}
